@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Winter Waltz</title>
+    <meta name="description" content="3/4박자 빈티지 R&B 비트 위에 점묘화 키네틱 타이포로 그린 30초 겨울 Shorts" />
+    <meta property="og:title" content="Winter Waltz" />
+    <meta property="og:image" content="poster.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --ground: #10142a;
+        --ink: #fbe3b8;
+        --ember: #f4b860;
+        --muted: #8e93b0;
+      }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        min-height: 100vh;
+        background:
+          radial-gradient(ellipse at 50% 110%, rgba(201, 100, 62, 0.35), transparent 60%),
+          radial-gradient(circle, rgba(207, 220, 240, 0.08) 1.5px, transparent 1.6px) 0 0 / 22px 22px,
+          var(--ground);
+        color: var(--ink);
+        font-family: system-ui, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 32px 16px 48px;
+        gap: 20px;
+      }
+      h1 {
+        font-family: "Black Han Sans", sans-serif;
+        font-weight: 400;
+        font-size: clamp(32px, 8vw, 52px);
+        letter-spacing: 0.04em;
+        color: var(--ember);
+      }
+      .frame {
+        width: min(100%, 420px, calc((100vh - 220px) * 9 / 16));
+        min-width: 260px;
+        aspect-ratio: 9 / 16;
+        border-radius: 22px;
+        overflow: hidden;
+        background: #000;
+        box-shadow: 0 0 0 1px rgba(251, 227, 184, 0.15), 0 24px 80px rgba(244, 184, 96, 0.18);
+      }
+      video { width: 100%; height: 100%; display: block; object-fit: cover; }
+      p { color: var(--muted); font-size: 14px; text-align: center; max-width: 420px; line-height: 1.6; }
+      a { color: var(--ember); }
+    </style>
+  </head>
+  <body>
+    <h1>WINTER WALTZ</h1>
+    <div class="frame">
+      <video src="winter-waltz.mp4" poster="poster.jpg" controls playsinline loop preload="metadata"></video>
+    </div>
+    <p>3/4박자 빈티지 R&amp;B 왈츠 · 점묘화 키네틱 타이포 · 30초<br />
+      <a href="winter-waltz.mp4" download>MP4 다운로드</a></p>
+  </body>
+</html>
